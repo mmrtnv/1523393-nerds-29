@@ -1,4 +1,5 @@
 /* Variables */
+
 :root {
   --basic-black: #000000;
   --basic-extra-gray: #283136;
@@ -17,7 +18,10 @@
   --special-dark-green: #00aa62;
   --special-light-yellow: #eab534;
   --special-dark-yellow: #e5a722;
+  --special-gray: #dfdfdf;
+  --special-dark-gray: #d5d5d5;
 }
+
 /* Global */
 body {
   min-width: 1460px;
@@ -52,6 +56,19 @@ img {
   list-style: none;
 }
 
+.main-heading {
+  margin: 0;
+  padding: 0;
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+  background-color: var(--basic-light-gray);
+}
+
+.visually-hidden {
+  color: var(--basic-white);
+}
+
 /* User navigation */
 
 .site-navigation a,
@@ -63,24 +80,23 @@ img {
 .user-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:focus {
-  background-color: var(--basic-watermelon);
+  color: var(--basic-watermelon);
 }
 
 .site-navigation a:active,
 .user-navigation a:active {
-  background-color: var(--special-light-gray);
+  color: var(--special-light-gray);
 }
 
-/*Center*/
+/*Main Text*/
 
-.center {
+.main-text {
   background-color: var(--basic-light-gray);
   text-align: center;
 }
 
-.center h2 {
-  font-size: 55px;
-  line-height: 55px;
+.main-text p {
+  margin: 0;
   text-align: center;
 }
 
@@ -105,8 +121,13 @@ img {
   text-align: center;
 }
 
+.typesworks-list {
+  color: var(--basic-extra-gray);
+}
+
 .typesworks-item {
   list-style: none;
+  color: var(--basic-extra-gray);
 }
 
 .typesworks h2 {
@@ -115,7 +136,26 @@ img {
   line-height: 45px;
 }
 
-/* Button */
+.typeworks-text {
+  color: var(--basic-extra-gray);
+}
+
+.typeworks-percent {
+  text-align: center;
+}
+
+.percent {
+  font-size: 45px;
+  line-height: 64px;
+  text-align: center;
+}
+
+.percent-text {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* Buttons */
 
 .button {
   font: inherit;
@@ -125,6 +165,8 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-watermelon);
   border: none;
+  width: 240px;
+  height: 50px;
 }
 
 .button:hover,
@@ -135,8 +177,15 @@ img {
   background-color: var(--special-dark-watermelon);
 }
 
+.button.features-button.features-button-red {
+  width: 160px;
+  height: 50px;
+}
+
 .button.features-button.features-button-green {
   background-color: var(--basic-green);
+  width: 160px;
+  height: 50px;
 }
 
 .button.features-button.features-button-green:hover,
@@ -150,6 +199,8 @@ img {
 
 .button.features-button.features-button-yellow {
   background-color: var(--basic-yellow);
+  width: 160px;
+  height: 50px;
 }
 
 .button.features-button.features-button-yellow:hover,
@@ -168,8 +219,13 @@ img {
   background-color: var(--basic-black);
 }
 
-.contacts-phone {
-  color: inherit;
+.button.button-footer {
+  width: 219px;
+  height: 50px;
+}
+
+.social-buttons {
+  list-style: none;
 }
 
 /*footer-contacts*/
@@ -181,7 +237,7 @@ img {
 }
 
 .footer-contacts a {
-    color: var(--basic-black);
+  color: var(--basic-black);
 }
 
 .footer-contacts h3 {
@@ -213,18 +269,85 @@ img {
   line-height: 36px;
 }
 
-.social-buttons {
-  list-style: none;
-}
-
 .social-url {
   list-style: none;
 }
 
-.visually-hidden {
-  color: var(--basic-white);
-}
-
 .logo-url {
   list-style: none;
+}
+
+.contacts-phone {
+  color: inherit;
+}
+
+/*Catalog*/
+
+.page-body.inner-page {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.catalog-title {
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+  background-color: var(--basic-light-gray);
+}
+
+.catalog-presentation-img {
+  list-style: none;
+}
+
+.catalog-img {
+  font-size: 359px;
+  line-height: 578px;
+}
+
+.catalog-page {
+  list-style: none;
+}
+
+.catalog-page a {
+  color: var(--basic-black);
+  background-color: var(--basic-light-gray);
+}
+
+.catalog-page a:hover {
+  background-color: var(--special-gray);
+}
+
+.catalog-page a:focus {
+  background-color: var(--special-dark-gray);
+}
+
+.catalog-page a:active {
+  background-color: var(--basic-white);
+}
+
+.catalog-button {
+  width: 260px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: var(--basic-light-gray);
+}
+
+.catalog-button:hover,
+.catalog.button:focus {
+  background-color: var(--special-gray);
+}
+
+.catalog-button:active {
+  background-color: var(--special-dark-gray);
+  color: var(--basic-black);
+}
+
+.catalog-sort-main {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.catalog-sort {
+  font-size: 14px;
+  line-height: 18px;
 }
